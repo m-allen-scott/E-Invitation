@@ -1,0 +1,504 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#d9f4fd" />
+
+  <title>Melvin Scott & Iswarya — Wedding Invitation</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Great+Vibes&family=Montserrat:wght@400;500;600&display=swap"
+    rel="stylesheet"
+  />
+
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin>
+
+<link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Montserrat:wght@400;500;600&display=swap"
+    rel="stylesheet">
+</head>
+
+<body class="cover-mode">
+
+  <div class="royal-cover" id="royalCover" aria-live="polite">
+    <div class="cover-glow cover-glow-one"></div>
+    <div class="cover-glow cover-glow-two"></div>
+
+    <div class="cover-content">
+      <p class="eyebrow cover-eyebrow"></p>
+      <h1>Melvin <span>&amp;</span> Ishu's Wedding</h1>
+      <p class="cover-subtitle">We invite you to witness our forever</p>
+
+      <button class="royal-seal" id="openInvitation" aria-label="Open the wedding invitation">
+        <span class="seal-ring"></span>
+        <span class="seal-core" aria-hidden="true"></span>
+      </button>
+
+      <p class="cover-instruction">Tap the love seal to enter</p>
+    </div>
+  </div>
+
+  <button
+    class="music-toggle"
+    id="musicToggle"
+    aria-label="Toggle background music"
+    aria-pressed="false"
+  >
+    <span class="music-icon">♫</span>
+    <span id="musicText">Pause</span>
+  </button>
+
+  <div class="site-shell" id="siteShell">
+
+    <!-- Background atmosphere -->
+    <div class="ambient" aria-hidden="true"></div>
+
+    <!-- Background Music -->
+    <audio id="weddingAudio" loop preload="auto" muted>
+      <source src="assets/Wedding  dude.mpeg" type="audio/mpeg">
+    </audio>
+
+    <!-- Navigation -->
+    <header class="navbar" id="navbar">
+
+    <a href="#home" class="brand">M &amp; I</a>
+
+    <button
+      class="menu-toggle"
+      id="menuToggle"
+      aria-label="Open menu"
+    >
+      ☰
+    </button>
+
+    <nav id="navLinks">
+      <a href="#home">Home</a>
+      <a href="#story">Our story</a>
+      <a href="#events">Date & Venue</a>
+      <a href="#countdown">Wedding countdown</a>
+      <a href="#message">With Love</a>
+    </nav>
+
+  </header>
+
+
+  <main>
+
+    <!-- =====================================================
+         HOME / HERO
+         ===================================================== -->
+
+    <section class="hero section" id="home">
+
+      <!-- Decorative glows -->
+      <div class="hero-glow glow-one"></div>
+      <div class="hero-glow glow-two"></div>
+
+      <!-- Decorative rings -->
+      <div class="hero-ring ring-one"></div>
+      <div class="hero-ring ring-two"></div>
+
+      <!-- Small floating particles -->
+      <div class="hero-particle p1">✦</div>
+      <div class="hero-particle p2">✧</div>
+      <div class="hero-particle p3">✦</div>
+      <div class="hero-particle p4">·</div>
+
+
+      <!-- Hero Text -->
+      <div class="hero-content reveal">
+
+        <p class="eyebrow">
+          TOGETHER WITH THEIR FAMILIES
+        </p>
+
+        <h1>
+          <span>Melvin Scott</span>
+          <i>&amp;</i>
+          <span>Iswarya</span>
+        </h1>
+
+        <div class="ornament">
+          <span></span>
+          ♡
+          <span></span>
+        </div>
+
+        <p class="invite-line">
+          invite you to celebrate the beginning of their forever
+        </p>
+
+        <p class="date">
+          29 • 11 • 2026
+        </p>
+
+        <a href="#events" class="royal-btn">
+          View Invitation
+          <span>→</span>
+        </a>
+
+      </div>
+
+
+      <!-- Couple -->
+      <div
+        class="couple-stage"
+        aria-label="Couple photo area"
+      >
+
+        <div class="photo-aura"></div>
+
+        <div class="couple-halo"></div>
+
+        <img
+          src="images/Melvin anna.jpeg"
+          alt="Iswarya"
+          class="couple bride reveal-delay"
+        >
+
+        <div class="couple-heart" aria-hidden="true">♡</div>
+
+        <img
+          src="images/Ishu akka.jpeg"
+          alt="Melvin Scott"
+          class="couple groom reveal-delay"
+        >
+
+        <!-- Floating hearts -->
+        <div class="floating-heart heart-one">♡</div>
+        <div class="floating-heart heart-two">♡</div>
+        <div class="floating-heart heart-three">♡</div>
+
+        <!-- Sparkles -->
+        <div class="sparkle s1">✦</div>
+        <div class="sparkle s2">✦</div>
+        <div class="sparkle s3">✧</div>
+        <div class="sparkle s4">✦</div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         STORY
+         ===================================================== -->
+
+    <section class="section story" id="story">
+
+      <div class="section-heading reveal">
+
+        <p class="eyebrow">
+          Our Chapter
+        <br><br><br>
+        </p>
+
+        <h2 class="story-heading-line">
+          <span>&nbsp;&nbsp;Mudhal Nee&nbsp;&nbsp;</span>
+          <span class="gold-infinity">∞</span>
+          <span>&nbsp;Mudivum Nee</span>
+        </h2>
+
+        <div class="heading-line"></div>
+
+      </div>
+
+
+      <div class="story-grid">
+
+        <article class="story-card story-card-toggle reveal" tabindex="0" aria-label="Open Love begins here story card">
+          <div class="story-card-inner">
+            <div class="story-face story-front">
+              <span class="story-marker">♡</span>
+              <div class="story-front-copy">
+                <p class="story-kicker">Our Love</p>
+                <h3>Story begins here</h3>
+                <p class="story-hint">Touch to reveal</p>
+              </div>
+            </div>
+
+            <div class="story-face story-back" aria-hidden="true">
+              <img src="images/p.jpeg" alt="Couple together" class="story-couple-photo" />
+              <div class="story-reveal-caption">Together forever</div>
+            </div>
+          </div>
+        </article>
+
+        <article class="story-card story-card-toggle featured reveal" tabindex="0" aria-label="Open our journey together story card">
+          <div class="story-card-inner">
+            <div class="story-face story-front">
+              <span class="story-marker">♡</span>
+              <div class="story-front-copy">
+                <p class="story-kicker">Our journey</p>
+                <h3>Path to forever</h3>
+                <p class="story-hint">Touch to reveal</p>
+              </div>
+            </div>
+
+            <div class="story-face story-back" aria-hidden="true">
+              <img src="images/p4.jpeg" alt="Couple portrait" class="story-couple-photo" />
+              <div class="story-reveal-caption">A love that feels like home</div>
+            </div>
+          </div>
+        </article>
+
+        <article class="story-card story-card-toggle reveal" tabindex="0" aria-label="Open forever starts story card">
+          <div class="story-card-inner">
+            <div class="story-face story-front">
+              <span class="story-marker">♡</span>
+              <div class="story-front-copy">
+                <p class="story-kicker">Our promise</p>
+                <h3>Forever starts here</h3>
+                <p class="story-hint">Touch to reveal</p>
+              </div>
+            </div>
+
+            <div class="story-face story-back" aria-hidden="true">
+              <img src="images/img2.jpeg" alt="Couple together" class="story-couple-photo" />
+              <div class="story-reveal-caption">Hand in hand, always</div>
+            </div>
+          </div>
+        </article>
+
+      </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         EVENTS
+         ===================================================== -->
+
+    <section class="section events" id="events">
+
+      <div class="section-heading reveal">
+
+        <p class="eyebrow">
+          We welcome you all
+        </p>
+
+        <h2>
+          SAVE THE DATE
+        </h2>
+
+        <div class="heading-line"></div>
+
+      </div>
+
+
+      <div class="events-grid">
+
+        <!-- Reception -->
+        <article class="event-card reveal">
+
+          <div class="event-icon">
+            ✦
+          </div>
+
+          <p class="event-day">
+            SATURDAY · 28 NOVEMBER
+          </p>
+
+          <h3>
+            Reception
+          </h3>
+
+          <p class="event-time">
+            7:35 PM onwards
+          </p>
+
+          <div class="event-divider"></div>
+
+          <p>
+            Mahalakshmi AC Mahal
+            <br>
+            Kovilpatti, Tamil Nadu
+          </p>
+
+          <a
+            href="https://maps.app.goo.gl/8Hxe9dhsp2B4SXMv5?g_st=iw"
+            class="text-link"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            View Location ↗
+          </a>
+
+        </article>
+
+
+        <!-- Wedding -->
+        <article class="event-card highlight reveal">
+
+          <div class="event-icon">
+            ♡
+          </div>
+
+          <p class="event-day">
+            SUNDAY · 29 NOVEMBER
+          </p>
+
+          <h3>
+            Wedding
+          </h3>
+
+          <p class="event-time">
+            7:35 AM – 9:00 AM
+          </p>
+
+          <div class="event-divider"></div>
+
+          <p>
+            Mahalakshmi AC Mahal
+            <br>
+            Kovilpatti, Tamil Nadu
+          </p>
+
+          <a
+            href="https://maps.app.goo.gl/8Hxe9dhsp2B4SXMv5?g_st=iw"
+            class="text-link"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            View Location ↗
+          </a>
+
+        </article>
+
+      </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         COUNTDOWN
+         ===================================================== -->
+
+    <section
+      class="section countdown-section"
+      id="countdown"
+    >
+
+      <div class="countdown-content reveal">
+
+        <p class="eyebrow">
+          THE WAIT IS ON
+        </p>
+
+        <h2>
+          Counting Every Heartbeat
+        </h2>
+
+
+        <div class="countdown-grid">
+
+          <div class="time-box">
+            <strong id="days">00</strong>
+            <span>Days</span>
+          </div>
+
+          <div class="time-box">
+            <strong id="hours">00</strong>
+            <span>Hours</span>
+          </div>
+
+          <div class="time-box">
+            <strong id="minutes">00</strong>
+            <span>Minutes</span>
+          </div>
+
+          <div class="time-box">
+            <strong id="seconds">00</strong>
+            <span>Seconds</span>
+          </div>
+
+        </div>
+
+
+        <p class="countdown-note">
+          Until we say “I do” ✨
+        </p>
+
+      </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         MESSAGE
+         ===================================================== -->
+
+    <section class="section message" id="message">
+
+      <div class="message-card reveal">
+
+        <div class="corner corner-tl">
+          ✦
+        </div>
+
+        <div class="corner corner-br">
+          ✦
+        </div>
+
+        <p class="eyebrow">
+          A NOTE FROM US 
+        </p>
+
+        <h2>
+          Our Day Wouldn't Be Complete Without You
+        </h2>
+
+        <p class="message-copy">
+          To our dearest family, friends and everyone who
+          has been part of our journey — your love, blessings
+          and laughter have made our story even more beautiful.
+          Come celebrate with us, make some memories and fill
+          this day with all your blessings and the joy your hearts can hold.
+        </p>
+
+        <p class="signature">
+          With all our love,
+          <br>
+
+          <span>
+            Melvin Scott&nbsp;&nbsp; &amp; &nbsp;Iswarya
+          </span>
+        </p>
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <!-- Footer -->
+  <footer>
+
+    <div class="footer-ornament">
+      ♡
+    </div>
+
+    <p>
+      With love · Melvin Ishu & Their Families
+    </p>
+
+  </footer>
+
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
+```
