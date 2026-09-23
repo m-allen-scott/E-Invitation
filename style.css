@@ -1834,40 +1834,51 @@ footer {
     visibility: visible !important;
   }
 }
-/* MOBILE - Safari-safe story card flip */
+/* MOBILE - Safe story card flip */
 @media (max-width: 680px) {
+
+  .story-card {
+    perspective: 1000px;
+    -webkit-perspective: 1000px;
+  }
 
   .story-card-inner {
     transform: none !important;
     -webkit-transform: none !important;
+    position: relative;
   }
 
   .story-face {
-    transition: opacity 0.25s ease;
-    -webkit-backface-visibility: visible !important;
-    backface-visibility: visible !important;
+    transition:
+      transform 0.45s ease,
+      opacity 0.25s ease;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
   }
 
   .story-front {
-    transform: none !important;
-    -webkit-transform: none !important;
+    transform: rotateY(0deg) !important;
+    -webkit-transform: rotateY(0deg) !important;
     opacity: 1;
     z-index: 2;
   }
 
   .story-back {
-    transform: none !important;
-    -webkit-transform: none !important;
+    transform: rotateY(90deg) !important;
+    -webkit-transform: rotateY(90deg) !important;
     opacity: 0;
     z-index: 1;
   }
 
   .story-card.is-open .story-front {
+    transform: rotateY(-90deg) !important;
+    -webkit-transform: rotateY(-90deg) !important;
     opacity: 0;
-    pointer-events: none;
   }
 
   .story-card.is-open .story-back {
+    transform: rotateY(0deg) !important;
+    -webkit-transform: rotateY(0deg) !important;
     opacity: 1;
     z-index: 3;
   }
