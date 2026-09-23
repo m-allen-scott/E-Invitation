@@ -1713,3 +1713,67 @@ footer {
   -webkit-transform: rotateY(180deg);
   transform: rotateY(180deg);
 }
+/* Center 3 story cards on mobile */
+@media (max-width: 680px) {
+  .story-grid {
+    grid-template-columns: 1fr;
+    width: 100%;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    justify-items: center;
+  }
+
+  .story-card,
+  .story-card:nth-child(1),
+  .story-card:nth-child(2),
+  .story-card:nth-child(3) {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+}
+
+@media (max-width: 420px) {
+  .story-grid {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+
+  .story-card,
+  .story-card:nth-child(1),
+  .story-card:nth-child(2),
+  .story-card:nth-child(3) {
+    width: 100% !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+}
+/* MOBILE ONLY - Fill the two couple images */
+@media (max-width: 680px) {
+  .couple-stage {
+    width: 100% !important;
+    max-width: 100% !important;
+    justify-content: center !important;
+    gap: 6px !important;
+    padding: 0 !important;
+  }
+
+  .couple {
+    width: 46vw !important;
+    max-width: none !important;
+    min-width: 0 !important;
+    padding: 6px !important;
+  }
+}
+
+@media (max-width: 420px) {
+  .couple-stage {
+    gap: 4px !important;
+  }
+
+  .couple {
+    width: 47vw !important;
+    padding: 5px !important;
+  }
+}
