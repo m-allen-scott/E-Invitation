@@ -1814,48 +1814,7 @@ footer {
     margin-bottom: -15px !important;
   }
 }
-/* MOBILE ONLY - Enhanced story card transition */
-@media (max-width: 680px) {
-
-  .story-card {
-    perspective: 1200px;
-  }
-
-  .story-card-inner {
-    transform-style: preserve-3d;
-    transition:
-      transform 0.55s cubic-bezier(.2,.8,.2,1),
-      filter 0.55s ease !important;
-  }
-
-  .story-card.is-open .story-card-inner {
-    transform: rotateY(180deg) scale(1.015) !important;
-    filter: drop-shadow(0 18px 25px rgba(20,82,104,.12));
-  }
-
-  .story-face {
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-  }
-
-  /* Front slightly fades while turning */
-  .story-card.is-open .story-front {
-    filter: brightness(.96);
-  }
-
-  /* Back image gently settles into place */
-  .story-back {
-    transition: opacity .3s ease;
-  }
-
-  .story-couple-photo {
-    transition:
-      transform .6s cubic-bezier(.2,.8,.2,1),
-      filter .6s ease;
-  }
-
-  .story-card.is-open .story-couple-photo {
-    transform: scale(1.02);
-    filter: saturate(1.05);
-  }
+/* Lower the story images so heads are not cropped */
+.story-card .story-couple-photo {
+  object-position: center 10%;
 }
