@@ -1834,3 +1834,49 @@ footer {
     visibility: visible !important;
   }
 }
+/* MOBILE - Safari-safe story card flip */
+@media (max-width: 680px) {
+
+  .story-card-inner {
+    transform: none !important;
+    -webkit-transform: none !important;
+  }
+
+  .story-face {
+    transition: opacity 0.25s ease;
+    -webkit-backface-visibility: visible !important;
+    backface-visibility: visible !important;
+  }
+
+  .story-front {
+    transform: none !important;
+    -webkit-transform: none !important;
+    opacity: 1;
+    z-index: 2;
+  }
+
+  .story-back {
+    transform: none !important;
+    -webkit-transform: none !important;
+    opacity: 0;
+    z-index: 1;
+  }
+
+  .story-card.is-open .story-front {
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  .story-card.is-open .story-back {
+    opacity: 1;
+    z-index: 3;
+  }
+
+  .story-card .story-couple-photo {
+    display: block !important;
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+    object-position: center 20% !important;
+  }
+}
