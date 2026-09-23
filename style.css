@@ -1818,3 +1818,19 @@ footer {
 .story-card .story-couple-photo {
   object-position: center 10%;
 }
+/* MOBILE - Keep story images visible after flip */
+@media (max-width: 680px) {
+  .story-card .story-back {
+    overflow: hidden !important;
+  }
+
+  .story-card .story-couple-photo {
+    display: block !important;
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+    object-position: center 20% !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+  }
+}
