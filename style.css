@@ -1777,3 +1777,26 @@ footer {
     padding: 5px !important;
   }
 }
+/* MOBILE ONLY - Reduce empty blue space below couple images */
+@media (max-width: 680px) {
+  .hero {
+    min-height: auto !important;
+    padding-bottom: 35px !important;
+  }
+
+  .couple-stage {
+    min-height: auto !important;
+    margin-bottom: 0 !important;
+    padding-bottom: 0 !important;
+  }
+
+  .couple {
+    aspect-ratio: 4 / 5;
+  }
+}
+
+@media (max-width: 420px) {
+  .hero {
+    padding-bottom: 25px !important;
+  }
+}
